@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Planner</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat&display=swap" rel="stylesheet">
+    <link href="CSS\style.css" rel="StyleSheet"/> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="Header">
+        <h1 id="title">Day Planner</h1>
+        <!-- container for Moment.js output -->
+        <div id="displayMoment"></div>   
+        <!--Put in a random quote here. Not finished yet---> 
+        <p id="random quote">Random Quote to go in here</p>
+    </div> 
+    <br></br>
+
+    <!--Container to hold bootstrap components-->
+    <div class="container text-right schedDiv">
+
+        <!--Div for HTML elements, will be repeated for each hour.-->
+        <div class ="row nineAM">
+            <div class="  input-container input-group col-1 ">
+                <p>9am</p>
+            </div>
+            <div class="input-group  col-10 form-group">
+                <textarea id="textNine" class="form-control custom-control textborder" rows="2" style="resize:none" name="9"></textarea>
+                <button class="col-0.5 btn save"></button>
+                <button class="col-0.5 btn clear"></button>
+            </div>
+        </div>
+
+        <div class ="row tenAM">
+            <div class="  input-container input-group col-1 ">
+                <p>10am</p>
+            </div>
+            <div class="input-group  col-10 form-group">
+                <textarea id="textTen" class="form-control custom-control textborder" rows="2" style="resize:none" name="10"></textarea>
+                <button class="col-0.5 btn save"></button>
+                <button class="col-0.5 btn clear"></button>
+            </div>
+        </div>
+
+        <div class ="row elevenAM">
+            <div class="  input-container input-group col-1 ">
+                <p>11am</p>
+            </div>
+            <div class="input-group  col-10 form-group">
+                <textarea id="textEleven" class="form-control custom-control textborder" rows="2" style="resize:none" name="11"></textarea>
+                <button class="col-0.5 btn save"></button>
+                <button class="col-0.5 btn clear"></button>
+            </div>
+        </div>
+
+        <div class ="row twelvePM">
+            <div class="  input-container input-group col-1 ">
+                <p>12pm</p>
+            </div>
+            <div class="input-group  col-10 form-group">
+                <textarea id="textTwlve" class="form-control custom-control textborder" rows="2" style="resize:none" name="12"></textarea>
+                <button class="col-0.5 btn save"></button>
+                <button class="col-0.5 btn clear"></button>
+            </div>
+        </div>
+
+        <div class ="row onePM">
+            <div class="  input-container input-group col-1 ">
+                <p>1pm</p>
+            </div>
+            <div class="input-group  col-10 form-group">
+                <textarea id="textOne" class="form-control custom-control textborder" rows="2" style="resize:none" name="13"></textarea>
+                <button class="col-0.5 btn save"></button>
+                <button class="col-0.5 btn clear"></button>
+            </div>
+        </div>
+
+
+        <div class ="row twoPM">
+            <div class="  input-container input-group col-1 ">
+                <p>2pm</p>
+            </div>
+            <div class="input-group  col-10 form-group">
+                <textarea id="textTwo" class="form-control custom-control textborder" rows="2" style="resize:none" name="14"></textarea>
+                <button class="col-0.5 btn save"></button>
+                <button class="col-0.5 btn clear"></button>
+            </div>
+        </div>
+
+
+        <div class ="row threePM">
+            <div class="  input-container input-group col-1 ">
+                <p>3pm</p>
+            </div>
+            <div class="input-group  col-10 form-group">
+                <textarea id="textThree" class="form-control custom-control textborder" rows="2" style="resize:none" name="15"></textarea>
+                <button class="col-0.5 btn save"></button>
+                <button class="col-0.5 btn clear"></button>
+            </div>
+        </div>
+
+
+        <div class ="row fourPM">
+            <div class="  input-container input-group col-1 ">
+                <p>4pm</p>
+            </div>
+            <div class="input-group  col-10 form-group">
+                <textarea id="textFour" class="form-control custom-control textborder" rows="2" style="resize:none" name="16"></textarea>
+                <button class="col-0.5 btn save"></button>
+                <button class="col-0.5 btn clear"></button>
+            </div>
+        </div>
+
+
+        <div class ="row fivePM">
+            <div class="  input-container input-group col-1 ">
+                <p>5pm</p>
+            </div>
+            <div class="input-group  col-10 form-group">
+                <textarea id="textFive" class="form-control custom-control textborder" rows="2" style="resize:none" name="17"></textarea>
+                <button class="col-0.5 btn save"></button>
+                <button class="col-0.5 btn clear"></button>
+            </div>
+        </div>
+
+    </div>
+
+   
+<br>
+
+    <div class="footer">
+        <h2>TECB Homework</h2>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="Lib\moment.min.js"></script>
+   <!--- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>--> 
+    <script src="JavaScript\script.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

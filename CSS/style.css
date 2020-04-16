@@ -1,0 +1,41 @@
+#Header{
+    text-align: center;
+}
+
+/* This selects the day planner title and date/time info */ 
+#title, #displayMoment{
+    font-family: 'Amatic SC' , cursive;
+    color: red;
+}
+
+p{
+    font-family: 'Caveat', cursive;
+}
+
+/*sticky footer */ 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: red;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+  }
+
+  /*save button css */ 
+  .btn{  
+      background-color: red !important; 
+      opacity: 30%;
+    
+  }
+
+  /*clear button css*/ 
+  .clear{  
+    background-color: blueviolet !important; 
+  }
+
+/* google font documentation. 
+font-family: 'Amatic SC', cursive;
+font-family: 'Caveat', cursive;
+*/ 
